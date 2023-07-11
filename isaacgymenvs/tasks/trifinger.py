@@ -28,8 +28,6 @@
 
 import numpy as np
 import os
-import torch
-
 from isaacgym import gymtorch
 from isaacgym import gymapi
 from isaacgymenvs.utils.torch_jit_utils import quat_mul 
@@ -48,6 +46,7 @@ from typing import Deque, Dict, Tuple, Union
 # python
 import enum
 import numpy as np
+import torch
 
 # ################### #
 # Dimensions of robot #

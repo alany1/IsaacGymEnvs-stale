@@ -28,7 +28,6 @@
 
 import numpy as np
 import os
-import torch
 
 from isaacgym import gymtorch
 from isaacgym import gymapi
@@ -37,6 +36,7 @@ from isaacgymenvs.utils.torch_jit_utils import to_torch, get_axis_params, torch_
 from isaacgymenvs.tasks.base.vec_task import VecTask
 
 from typing import Tuple, Dict
+import torch
 
 
 class Anymal(VecTask):
