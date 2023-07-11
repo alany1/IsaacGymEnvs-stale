@@ -28,13 +28,13 @@
 
 import numpy as np
 import os
-import torch
 
 from isaacgym import gymutil, gymtorch, gymapi
 from isaacgymenvs.utils.torch_jit_utils import to_torch, get_axis_params, tensor_clamp, \
     tf_vector, tf_combine
 from .base.vec_task import VecTask
 
+import torch
 
 class FrankaCabinet(VecTask):
 

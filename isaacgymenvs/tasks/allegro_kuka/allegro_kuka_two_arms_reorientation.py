@@ -29,13 +29,13 @@
 import os
 from typing import List
 
-import torch
 from isaacgym import gymapi
-from torch import Tensor
 
 from isaacgymenvs.utils.torch_jit_utils import to_torch, torch_rand_float
 from isaacgymenvs.tasks.allegro_kuka.allegro_kuka_two_arms import AllegroKukaTwoArmsBase
 from isaacgymenvs.tasks.allegro_kuka.allegro_kuka_utils import tolerance_curriculum, tolerance_successes_objective
+import torch
+from torch import Tensor
 
 
 class AllegroKukaTwoArmsReorientation(AllegroKukaTwoArmsBase):

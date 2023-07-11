@@ -28,15 +28,15 @@
 
 from typing import List, Tuple
 
-import torch
 from isaacgym import gymapi
-from torch import Tensor
 
 from isaacgymenvs.utils.torch_jit_utils import to_torch, torch_rand_float
 
 from isaacgymenvs.tasks.allegro_kuka.allegro_kuka_base import AllegroKukaBase
 from isaacgymenvs.tasks.allegro_kuka.allegro_kuka_utils import tolerance_curriculum, tolerance_successes_objective
 
+import torch
+from torch import Tensor
 
 class AllegroKukaRegrasping(AllegroKukaBase):
     def __init__(self, cfg, rl_device, sim_device, graphics_device_id, headless, virtual_screen_capture, force_render):
